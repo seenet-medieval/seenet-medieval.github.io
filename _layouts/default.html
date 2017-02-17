@@ -2,7 +2,13 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>SEENET - Society for Early English &amp; Norse Electronic Texts</title>
+        <title>SEENET: 
+	{% if page.title == "Home" %}
+		Society for Early English and Norse Electronic Texts
+	{% else %}
+		{{page.title}}
+	{% endif %}
+	</title>
         <link rel="stylesheet" type="text/css" href="/css/seenet/seenet.css"/>
         <link rel="apple-touch-icon" sizes="180x180" href="/media/images/seenet/icons/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" href="/media/images/seenet/icons/favicon-32x32.png" sizes="32x32"/>
