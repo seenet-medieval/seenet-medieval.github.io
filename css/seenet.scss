@@ -7,12 +7,16 @@
   /\*height:100%;*\/
   /\*background-color:#3a3a3c;*\/
 }*/
-#wrapper {
+body {
     max-width:1200px;
     margin:auto;
     /*height:100%;*/
     /*min-height:100vh;*/
     /*background-color:white;*/
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    line-height:1.5;
+    font-size:large;
+    padding:0 1ex 0 1ex;
 }
 #banner {
     max-width:100%;
@@ -24,26 +28,19 @@
     max-width:170%;
     height:auto;
 }
-#body {
-    /*width:100%;*/
-    /*height:85vh;*/
-    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-    line-height:1.5;
-    font-size:large;
-}
 nav {
     width:30%;
     vertical-align:top;
     margin-right:5%;
 }
-#content {
+main {
     width:50%;
     border-left: black 1px solid;
     margin-left: -5%;
     padding-left:5%;
     /*min-height:80%;*/
 }
-nav, #content {
+nav, main {
     display:inline-block;
 }
 
@@ -73,7 +70,7 @@ h1, h2, nav li > a:hover {
     color:#3a538f;
 }
 
-#content > h1 {
+main > h1 {
     margin-top:0;
     font-size:125%;
 }
@@ -96,7 +93,7 @@ div.proj_lead {
 }
 
 @media (max-width: 600px) {
-    nav, #content {
+    nav, main {
         display:block;
         width:100%;
     }
@@ -112,7 +109,7 @@ div.proj_lead {
     nav li {
         margin-bottom:0.25em;
     }
-    #content {
+    main {
         border-left:0;
         border-top:black 1px solid;
         margin-left:0;
@@ -121,6 +118,10 @@ div.proj_lead {
     }
     #banner{
         margin-bottom: 0.5em;
+    }
+    #banner img {
+	    margin-left:-11%;
+    	max-width:190%;
     }
 }
 
