@@ -9,7 +9,7 @@
 		{{page.title}}
 	{% endif %}
 	</title>
-        <link rel="stylesheet" type="text/css" href="/css/seenet/seenet.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/seenet.css"/>
         <link rel="apple-touch-icon" sizes="180x180" href="/media/images/seenet/icons/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" href="/media/images/seenet/icons/favicon-32x32.png" sizes="32x32"/>
         <link rel="icon" type="image/png" href="/media/images/seenet/icons/favicon-16x16.png" sizes="16x16"/>
@@ -22,13 +22,14 @@
         <meta name="theme-color" content="#ffffff"/>
     </head>
     <body>
-        <div id="wrapper">
+        <header>
             <div id="banner">
                 <img src="/media/images/seenet/seenet_banner.png"
                     alt="Society for Early English and
                  Norse Electronic Texts" />
             </div>
-            <div id="body">
+        </header>
+
                 <nav>
                     <ul>
                         {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
@@ -43,10 +44,8 @@
                         {% endfor %}
                     </ul>
                 </nav>
-                <div id="content">
+                <main>
                     {{ content }}
-                </div>
-            </div>
-        </div>
+                </main>
     </body>
 </html>
