@@ -134,7 +134,7 @@ ol.pub_list, ul.pub_list {
     /* width: 100%; */
     
     &:not(:last-of-type) span.list_entry {
-    	padding-bottom:1.5ex;
+    	padding-bottom:1ex;
     }
     
 	}
@@ -165,10 +165,6 @@ a {
 	&:visited {
 		color:$desat_color;
 	}
-}
-
-sup {
-	line-height:1;
 }
 
 /* Responsive display for smaller devices */
