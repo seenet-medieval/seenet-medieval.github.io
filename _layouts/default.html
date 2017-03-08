@@ -45,6 +45,13 @@
                     </ul>
                 </nav>
                 <main>
+                	<h1>
+                	{% if page.heading %}
+                		{{ page.heading }}
+                	{% else %}
+                		{{ page.title }}
+                	{% endif %}
+                	</h1>
                     {{ content }}
                 </main>
     </body>
