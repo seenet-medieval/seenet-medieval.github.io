@@ -69,8 +69,13 @@ span.version{
     font-weight:bold;
 }
 
-h1, h2, nav li > a:hover {
-    color:$main_color;
+h1, h2, nav li {
+	a {
+		&:hover, &:focus, &:active {
+		color:$main_color;
+		text-decoration:underline;
+		}
+	}
 }
 
 h1 {
@@ -110,9 +115,6 @@ article h1 {
     		color:$main_color;
     	}
     }
-}
-article h1 > a:hover, nav a:hover {
-    text-decoration:underline;
 }
 
 div.proj_lead {
