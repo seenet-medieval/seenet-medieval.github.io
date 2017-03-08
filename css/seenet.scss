@@ -130,6 +130,11 @@ ol.pub_list, ul.pub_list {
 	li {
     display: table-row;
     /* width: 100%; */
+    
+    &:not(:last-of-type) span.list_entry {
+    	padding-bottom:1ex;
+    }
+    
 	}
 
 	span.list_num {
@@ -137,7 +142,7 @@ ol.pub_list, ul.pub_list {
 		display: table-cell;
 	}
 
-	span.list_pub {
+	span.list_entry {
 		display: table-cell;
 	}
 
