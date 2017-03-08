@@ -1,19 +1,10 @@
 ---
 # Main stylesheet
 ---
-/*html, body { 
-  margin:0; 
-  padding:0; 
-  /\*height:100%;*\/
-  /\*background-color:#3a3a3c;*\/
-}*/
 body {
     max-width:1200px;
     margin:auto;
-    /*height:100%;*/
-    /*min-height:100vh;*/
-    /*background-color:white;*/
-    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-family:Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
     line-height:1.5;
     font-size:large;
     padding:0 1ex 0 1ex;
@@ -35,8 +26,8 @@ nav {
 }
 main {
     width:50%;
-    border-left: black 1px solid;
-    margin-left: -5%;
+    border-left:black 1px solid;
+    margin-left:-5%;
     padding-left:5%;
     /*min-height:80%;*/
 }
@@ -70,36 +61,88 @@ h1, h2, nav li > a:hover {
     color:#3a538f;
 }
 
-main > h1 {
+h1 {
     margin-top:0;
     font-size:125%;
 }
 
 h2 {
-    font-weight: normal;
-    font-size: 110%;
-    margin-bottom: 0.5em;
-    margin-top: 1.5em;
+	font-weight:normal;
+	font-size:110%;
+	font-style:italic;
+	color:#3a538f;
+	margin: 1.5em 0 0.5em 0;
 }
-h2 > a:hover {
-    text-decoration: underline;
+
+h3 {
+	font-weight:normal;
+	font-size:110%;
+	font-style:italic;
 }
-h2 > a, nav li > a {
-    color: inherit;
-    text-decoration: none;
+
+h3 ~ article > h1 {
+	margin-top:0.5em;
+}
+
+article h1 {
+    font-weight:normal;
+    font-size:110%;
+    margin-bottom:0.5em;
+    /*margin-top:1.5em;*/
+}
+article h1 > a:hover, nav a:hover {
+    text-decoration:underline;
+}
+article h1 > a, nav a {
+    color:inherit;
+    text-decoration:none;
 }
 div.proj_lead {
     font-size:110%;
 }
 
-@media (max-width: 600px) {
+/* Publication lists */
+ol.pub_list, ul.pub_list {
+    list-style: none;
+    padding: 0;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+
+	li {
+    display: table-row;
+    /* width: 100%; */
+	}
+
+	span.list_num {
+		width: 2.5em;
+		display: table-cell;
+	}
+
+	span.list_pub {
+		display: table-cell;
+	}
+
+	span.pub_available {
+		display:block;
+		font-style:italic;
+	
+		a {
+			font-style:normal;
+			word-break:break-word;
+		}
+	}
+}
+
+/* Responsive display for smaller devices */
+@media (max-width:600px) {
     nav, main {
         display:block;
         width:100%;
     }
     nav {
-        border-top: 1px solid black;
-        padding-top: 1em;
+        border-top:1px solid black;
+        padding-top:1em;
     }
     nav ul {
         width:auto;
@@ -117,7 +160,7 @@ div.proj_lead {
         padding-top:0.5em;
     }
     #banner{
-        margin-bottom: 0.5em;
+        margin-bottom:0.5em;
     }
     #banner img {
 	    margin-left:-11%;
