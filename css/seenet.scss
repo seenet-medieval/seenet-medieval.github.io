@@ -1,6 +1,9 @@
 ---
 # Main stylesheet
 ---
+$main_color:#3a538f; 
+$desat_color:#5e6168;
+
 body {
     max-width:1200px;
     margin:auto;
@@ -23,6 +26,15 @@ nav {
     width:30%;
     vertical-align:top;
     margin-right:5%;
+    
+    a {
+		color:inherit;
+		text-decoration:none;
+		
+		&:visited {
+			color:inherit;
+		}
+	}
 }
 main {
     width:50%;
@@ -58,7 +70,7 @@ span.version{
 }
 
 h1, h2, nav li > a:hover {
-    color:#3a538f;
+    color:$main_color;
 }
 
 h1 {
@@ -70,7 +82,7 @@ h2 {
 	font-weight:normal;
 	font-size:110%;
 	font-style:italic;
-	color:#3a538f;
+	color:$main_color;
 	margin: 1.5em 0 0.5em 0;
 }
 
@@ -88,15 +100,21 @@ article h1 {
     font-weight:normal;
     font-size:110%;
     margin-bottom:0.5em;
-    /*margin-top:1.5em;*/
+    color:initial;
+    
+    a {
+    	color:$main_color;
+    	text-decoration:none;
+    	
+    	&:visited {
+    		color:$main_color;
+    	}
+    }
 }
 article h1 > a:hover, nav a:hover {
     text-decoration:underline;
 }
-article h1 > a, nav a {
-    color:inherit;
-    text-decoration:none;
-}
+
 div.proj_lead {
     font-size:110%;
 }
@@ -131,6 +149,14 @@ ol.pub_list, ul.pub_list {
 			font-style:normal;
 			word-break:break-word;
 		}
+	}
+}
+
+a {
+	color:$main_color;
+	
+	&:visited {
+		color:$desat_color;
 	}
 }
 
