@@ -167,6 +167,10 @@ a {
 	}
 }
 
+sup {
+	line-height:0;
+}
+
 /* Responsive display for smaller devices */
 @media (max-width:700px) {
     nav, main {
