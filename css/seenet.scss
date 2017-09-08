@@ -1,7 +1,7 @@
 ---
 # Main stylesheet
 ---
-$main_color:#3a538f; 
+$main_color:#3a538f;
 $desat_color:#5e6168;
 
 body {
@@ -13,24 +13,25 @@ body {
     padding:0 1ex 0 1ex;
 }
 #banner {
-    max-width:100%;
+    width:100%;
     min-height:15%;
     margin-bottom:3em;
     overflow-x:hidden;
 }
 #banner img {
-    max-width:170%;
-    height:auto;
+    max-width:633px;
+    max-height:171px;
+    margin:0 6% 0 6%;
 }
 nav {
     width:30%;
     vertical-align:top;
     margin-right:5%;
-    
+
     a {
 		color:inherit;
 		text-decoration:none;
-		
+
 		&:visited {
 			color:inherit;
 		}
@@ -200,8 +201,6 @@ sup {
         margin-bottom:0.5em;
     }
     #banner img {
-	    margin-left:-11%;
-    	max-width:190%;
+	    margin:0;
     }
 }
-
