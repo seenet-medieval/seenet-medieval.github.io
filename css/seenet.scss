@@ -70,6 +70,10 @@ span.version{
     font-weight:bold;
 }
 
+span.role{
+  font-style:italic;
+}
+
 h1, h2, nav li {
 	a {
 		&:hover, &:focus, &:active {
@@ -107,11 +111,11 @@ article h1 {
     font-size:110%;
     margin-bottom:0.5em;
     color:initial;
-    
+
     a {
     	color:$main_color;
     	text-decoration:none;
-    	
+
     	&:visited {
     		color:$main_color;
     	}
@@ -123,7 +127,7 @@ div.proj_lead {
 }
 
 /* Publication lists */
-ol.pub_list, ul.pub_list {
+ol.pub_list, ul.pub_list, ul.people_list {
     list-style: none;
     padding: 0;
     display: table;
@@ -133,11 +137,11 @@ ol.pub_list, ul.pub_list {
 	li {
     display: table-row;
     /* width: 100%; */
-    
+
     &:not(:last-of-type) span.list_entry {
     	padding-bottom:2ex;
     }
-    
+
 	}
 
 	span.list_num {
@@ -145,14 +149,14 @@ ol.pub_list, ul.pub_list {
 		display: table-cell;
 	}
 
-	span.list_entry {
+	.list_entry {
 		display: table-cell;
 	}
 
 	span.pub_available {
 		display:block;
 		font-style:italic;
-	
+
 		a {
 			font-style:normal;
 			word-break:break-word;
@@ -162,7 +166,7 @@ ol.pub_list, ul.pub_list {
 
 a {
 	color:$main_color;
-	
+
 	&:visited {
 		color:$desat_color;
 	}
