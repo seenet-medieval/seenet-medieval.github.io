@@ -47,7 +47,7 @@ The site can easily be developed and tested on a local computer. You simply need
 
 ### Prerequisites:
 * Ruby ([installation instructions](https://www.ruby-lang.org/en/documentation/installation/))
-  * Note for MacOS users: While Ruby comes installed with MacOS, your system version is probably too old for Jekyll. The simplest way to install a current version of Ruby is using Homebrew. First [install Homebrew](https://brew.sh/), then run `brew install ruby`. (More sophisticated options are available if you are having problems or will need to work a lot in Ruby; the rbenv manager is widely recommended, though it can take some work to set up.)
+  * Note for MacOS users: While Ruby comes installed with MacOS, your system version is probably too old for Jekyll. The simplest way to install a current version of Ruby is using Homebrew. First [install Homebrew](https://brew.sh/), then run `brew install ruby`. (More sophisticated options are available if you are having problems or will need to work a lot in Ruby; the [rbenv](https://github.com/rbenv/rbenv#readme) manager is widely recommended, though it can take some work to set up.)
 * Jekyll ([installation instructions](https://jekyllrb.com/docs/installation/))
   * In most cases, Jekyll installation should be as simple as running `gem install jekyll`.
 
