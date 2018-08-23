@@ -63,7 +63,9 @@
                 	{% if page.heading %}
                 		{{ page.heading }}
                 	{% else %}
-                		{{ page.title }}
+                      {% unless page.noheading %}
+                        {{ page.title }}
+                      {% endunless %}
                 	{% endif %}
                 	</h1>
                     {{ content }}
