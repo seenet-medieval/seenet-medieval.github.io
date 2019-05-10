@@ -25,6 +25,27 @@ navigation_weight: [A number indicating in what order the page should appear in 
 
 To add a new page, simply create a new file in the same format as the existing files. Note that the Front Matter section is *required* for Jekyll to render the page. If you are creating an HTML page, the page content you supply should be what would go inside the `<main>` element; the default template will build the page, add the **title** or **header** specified in the Front Matter inside an `<h1>` element directly within `<main>`, and then place the rest of the content after that heading in `<main>`. You may also choose to write a new page in [Markdown](https://daringfireball.net/projects/markdown/) instead of HTML; simply create the file with the `.md` extension (Jekyll will transform it into an HTML file when building the page) and provide the required Front Matter.
 
+### Adding News Items
+
+The **News** page contains a complete record of news items posted to the site, and the home page always features the most recent news item. News items are created in the form of blog posts, which means that they reside in the `/_posts/` directory. Each post is an independent file.
+
+Posts should be given a descriptive filename beginning with the post date in the format `yyyy-mm-dd-` followed by a slug that describes the post and can serve as a permanent link to that post (though we do not currently provide direct links to individual posts through the site). Please note that the date you use in the post filename will be used by Jekyll as the date of the post. Each post may be stored in Markdown or as an HTML snippet, and should be given the appropriate corresponding extension, `.md` or `.html`.
+
+Within site templates, the HTML `<h1>` element is used to contain the post title. If internal headings are needed within a post, use `<h2>` as the highest heading level.
+
+As with main site pages, each post also begins with a **Front Matter** section. Currently, the following fields are used:
+
+```yaml
+---
+layout: post
+title: "[The title of the post (in quotation marks)]"
+---
+```
+
+Any features needed in future, such as short titles, authors, post times, snippets, etc. will have to be added in future both to front matter and to templates. Draft posts are also not currently supported, though they are easy to implement.
+
+All that is necessary to make a new post is to create the file. It will immediately be added to the **News** page (in the order determined by its date), and if it has the most recent date it will be placed at the top of the home page.
+
 ### Modifying the Page Generation
 
 Jekyll builds the content snippets into full pages using Layouts, which are provided in the `/_layouts/` directory. At present, we use a single layout, `default.html`, for all pages in order to ensure a uniform experience across the site. Layouts are created using a combination of HTML code and code in the [Liquid templating language](https://shopify.github.io/liquid/).
