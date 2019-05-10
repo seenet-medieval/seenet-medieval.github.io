@@ -1,0 +1,15 @@
+---
+title: "News"
+layout: default
+navigation_weight: 3
+---
+
+{% for post in site.posts %}
+  <article>
+    <h1>{{ post.title }}</h1>
+    <p class="dateline">
+      <time datetime="{{ post.date | date: '%Y-%m-%d'}}">{{ post.date | date: "%B %d, %Y" }}</time>
+    </p>
+    {{ post.content }}
+  </article>
+{% endfor %}

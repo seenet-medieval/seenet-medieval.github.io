@@ -49,17 +49,16 @@
                         {% endfor %}
                     </ul>
 
-                </nav>
-                <main>
-                	<h1>
-                	{% if page.heading %}
-                		{{ page.heading }}
-                	{% else %}
-                      {% unless page.noheading %}
+                </nav><main>
+                  {% unless page.noheading %}
+                    <h1>
+                  	{% if page.heading %}
+                  		{{ page.heading }}
+                  	{% else %}
                         {{ page.title }}
-                      {% endunless %}
-                	{% endif %}
-                	</h1>
+                  	{% endif %}
+                  	</h1>
+                  {% endunless %}
                     {{ content }}
                 </main>
     </body>
