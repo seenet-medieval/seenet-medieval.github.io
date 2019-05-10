@@ -31,7 +31,8 @@ body {
 nav {
     width:30%;
     vertical-align:top;
-    margin-right:5%;
+    border-right:black 1px solid;
+    margin-right:-1px;
 
     a {
 		color:inherit;
@@ -45,7 +46,6 @@ nav {
 main {
     width:50%;
     border-left:black 1px solid;
-    margin-left:-5%;
     padding-left:5%;
     /*min-height:80%;*/
 }
@@ -77,6 +77,12 @@ span.version{
 
 span.role{
   font-style:italic;
+}
+
+.dateline{
+  margin-top:-0.5em;
+  line-height:1;
+  font-size:smaller;
 }
 
 h1, h2, nav li {
@@ -192,6 +198,7 @@ sup {
         width:100%;
     }
     nav {
+        border-right:0;
         border-top:1px solid black;
         padding-top:1em;
     }
