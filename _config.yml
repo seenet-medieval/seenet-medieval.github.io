@@ -1,2 +1,9 @@
+title: "SEENET: Society for Early English and Norse Electronic Texts"
+description: "The Society for Early English & Norse Electronic Texts (SEENET) is a nonprofit scholarly organization dedicated to producing high-quality digital documentary and critical editions of medieval texts."
+url: https://www.seenet.org
+
 sass:
-    style: compressed
+  style: compressed
+
+plugins:
+  - jekyll-feed
